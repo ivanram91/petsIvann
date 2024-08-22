@@ -1,9 +1,41 @@
-body{
-    background-color: rgb(231, 243, 255);
+.img{
+    position: absolute;
+    z-index: 1;
+    transform: scale(.7,.7) translate(-390px,-250px);
+    
 }
 
+
 h1{
-    text-align: center;
-    font-size: 30px;
+    transform: translate(550px,0px);
+    font-size: 50px;
     text-shadow: 1px 1px 4px;
+    position:absolute;
+    z-index: 2;
 }
+
+h4{
+    transform: translate(510px,60px);
+    font-size: 20px;
+    position:absolute;
+    z-index: 2;
+}
+
+.form{
+    font-size: 16px;
+    position: absolute;
+    transform: translate(400px,150px);
+    z-index: 2;
+}
+
+.opt{
+    position: absolute;
+    z-index: 2;
+    transform:translate(680px,155px)
+}
+.lab{
+    position:absolute;
+    z-index: 3;
+    transform: translate(600px,155px);
+}
+
