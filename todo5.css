@@ -19,8 +19,8 @@
 }
 
 @keyframes tai{
-    0% {text-shadow: 1px 1px 4px rgb(219, 219, 255)}
-    100% {text-shadow: 1px 1px 4px  rgb(36, 36, 252);}
+    0% {text-shadow: 1px 1px 4px rgb(119, 119, 255)}
+    100% {text-shadow: 1px 1px 4px  rgb(0, 0, 253);}
 }
 
 h4{
@@ -59,9 +59,26 @@ h4{
 }
 
 .lis{
+    font-weight: bold;
     position: absolute;
     z-index: 2;
     font-size: 17px;
-    transform: translate(400px,300px);
+    transform: translate(400px,370px);
     list-style: none;
+    animation-name: res; 
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: none;
+    animation-iteration-count: infinite;
+}
+
+@keyframes res{
+    0% {left:0px;top:0px}
+    50% {left:10px; top: 0px}
+    100% {left:0px;top:0px}
+    
+}
+
+.sub{
+   transform: translate(250px,30px);
 }
