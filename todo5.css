@@ -6,36 +6,62 @@
 }
 
 
-h1{
-    transform: translate(550px,0px);
-    font-size: 50px;
-    text-shadow: 1px 1px 4px;
+.tite{
+    transform: translate(520px,0px);
+    font-size: 70px;
     position:absolute;
     z-index: 2;
+    animation-name: tai;
+    animation-duration: 1s;
+    animation-fill-mode:none;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes tai{
+    0% {text-shadow: 1px 1px 4px rgb(219, 219, 255)}
+    100% {text-shadow: 1px 1px 4px  rgb(36, 36, 252);}
 }
 
 h4{
-    transform: translate(510px,60px);
+    transform: translate(520px,100px);
     font-size: 20px;
     position:absolute;
     z-index: 2;
 }
 
 .form{
-    font-size: 16px;
+    font-size: 20px;
     position: absolute;
-    transform: translate(400px,150px);
+    transform: translate(380px,180px);
     z-index: 2;
+}
+
+.form input{
+    font-size: 15px;
 }
 
 .opt{
+    
     position: absolute;
     z-index: 2;
-    transform:translate(680px,155px)
-}
-.lab{
-    position:absolute;
-    z-index: 3;
-    transform: translate(600px,155px);
+    transform:translate(800px,187px)
 }
 
+.opt option{
+    font-size:15px ;
+}
+.lab{
+    font-size: 20px ;
+    position:absolute;
+    z-index: 3;
+    transform: translate(665px,180px);
+}
+
+.lis{
+    position: absolute;
+    z-index: 2;
+    font-size: 17px;
+    transform: translate(400px,300px);
+    list-style: none;
+}
